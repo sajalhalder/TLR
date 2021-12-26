@@ -8,4 +8,10 @@ Sajal Halder, Kwan Hui Lim, Jeﬀrey Chan, and Xiuzhen Zhang. Transformer-based 
 # Implemtation Details
 In this TLR model implemenation, we have used transformer based attention machanism that has been implemented in python programing language. We use tensorflow, keras and attention machanism. 
 
+Required Packages:
+
+
+tensorflow: 2.4.1
+pandas: 1.2.2
+
 
