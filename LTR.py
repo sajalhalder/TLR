@@ -392,7 +392,7 @@ def preprocess(dataset):
 
 
 
-    dfVisits = pd.read_excel('DataExcelFormat/userVisits-' + dataset + '-allPOI.xlsx')
+    dfVisits = pd.read_excel('userVisits-' + dataset + '-allPOI.xlsx')
 
     dfVisits = dfVisits[dfVisits.takenUnix > 0]
     dfVisits['user_freq'] = dfVisits.groupby('nsid')['nsid'].transform('count')
@@ -474,7 +474,7 @@ Find Coordinates values and categoreis values.
 def findCordinates_Category(dataset):
     Cordinats = {}
     Category = {}
-    dfNodes = pd.read_excel('DataExcelFormat/POI-' + dataset + '.xlsx')
+    dfNodes = pd.read_excel('POI-' + dataset + '.xlsx')
     for i in range(len(dfNodes)):
         poiID = 'POI_'+ str(dfNodes.iloc[i].poiID)
         lati = dfNodes.iloc[i].lat
@@ -932,7 +932,7 @@ def findPopularityFromData(dataset):
 
     global POPULARITY
 
-    dfvisits1 = pd.read_excel('DataExcelFormat/userVisits-' + dataset + '-allPOI.xlsx')
+    dfvisits1 = pd.read_excel('userVisits-' + dataset + '-allPOI.xlsx')
 
     dfvisits1.drop_duplicates(subset=['nsid', 'poiID', 'seqID'])
 
