@@ -14,4 +14,8 @@ Required Packages:
 tensorflow: 2.4.1
 pandas: 1.2.2
 
+Here we added only one dataset (Melbourne). If you are interested to know about more datasets email at sajal.halder@student.rmit.edu.au or sajal.csedu01@gmail.com
+
+
+
 
